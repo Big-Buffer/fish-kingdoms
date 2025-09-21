@@ -41,6 +41,7 @@ class AutoAnswerPaddle:
     def setup_screen_areas(self):
         """通过GUI设置屏幕区域"""
         root = tk.Tk()
+        root.attributes('-topmost', True)  # 确保窗口在最前面
         root.withdraw()  # 隐藏主窗口
 
         print("请按照提示设置屏幕区域坐标")
